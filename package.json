@@ -1,0 +1,42 @@
+{
+  "name": "react-form-ui-snippets",
+  "displayName": "React Form UI Snippets",
+  "description": "Snippets for React form components and helpers: Button, Input, CheckBox, Form (2 variants), validateField, onChange, validateForm, and form handler.",
+  "version": "0.0.1",
+  "publisher": "uzisharma",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "icon": "images/icon.png",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react-components.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react-components.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react-components.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react-components.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/your-repo.git"
+  },
+  "bugs": {
+    "url": "https://example.com/your-repo/issues"
+  },
+  "homepage": "https://example.com/your-repo#readme"
+}
