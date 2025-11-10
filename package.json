@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://example.com/your-repo.git"
+    "url": "https://github.com/uzisharma/ReactSnippetsExtension.git"
   },
   "bugs": {
-    "url": "https://example.com/your-repo/issues"
+    "url": "https://github.com/uzisharma/ReactSnippetsExtension.git/issues"
   },
-  "homepage": "https://example.com/your-repo#readme"
+  "homepage": "https://github.com/uzisharma/ReactSnippetsExtension.git#readme"
 }
