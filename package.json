@@ -2,7 +2,7 @@
   "name": "react-snippets-by-uzisharma",
   "displayName": "React Form UI Snippets",
   "description": "Snippets for React form components and helpers: Button, Input, CheckBox, Form (2 variants), validateField, onChange, validateForm, and form handler.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "uzisharma",
   "engines": {
     "vscode": "^1.85.0"
@@ -38,6 +38,14 @@
         "path": "./snippets/complete-react-page.code-snippets"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/complete-react-page.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/complete-react-page.code-snippets"
+      },
+      {
         "language": "css",
         "path": "./snippets/css-snippets.code-snippets"
       },
@@ -46,7 +54,19 @@
         "path": "./snippets/css-snippets.code-snippets"
       },
       {
+        "language": "javascriptreact",
+        "path": "./snippets/js-dummy-data.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/js-dummy-data.code-snippets"
+      },
+      {
         "language": "javascript",
+        "path": "./snippets/js-dummy-data.code-snippets"
+      },
+      {
+        "language": "typescript",
         "path": "./snippets/js-dummy-data.code-snippets"
       },
       {
@@ -55,6 +75,14 @@
       },
       {
         "language": "typescriptreact",
+        "path": "./snippets/react-base.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react-base.code-snippets"
+      },
+      {
+        "language": "typescript",
         "path": "./snippets/react-base.code-snippets"
       }
     ]

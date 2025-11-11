@@ -1,35 +1,32 @@
 {
-  "React Functional Component (auto file name)": {
-    "prefix": "rfc",
-    "body": [
-      "const ${TM_FILENAME_BASE} = () => {",
-      "  return (",
-      "    <div className=\"${TM_FILENAME_BASE.toLowerCase()}\">",
-      "      ",
-      "    </div>",
-      "  );",
-      "};",
-      "",
-      "export default ${TM_FILENAME_BASE};"
-    ],
-    "description": "Creates a React functional component automatically named after the current file."
-  },
+"React Functional Component (auto file name)": {
+  "prefix": "rfc",
+  "body": [
+    "const ${TM_FILENAME_BASE} = () => {",
+    "  return (",
+    "    <div className=\"${TM_FILENAME_BASE/(.*)/${1:/downcase}/}\">",
+    "      ",
+    "    </div>",
+    "  );",
+    "};",
+    "",
+    "export default ${TM_FILENAME_BASE};"
+  ],
+  "description": "Creates a React functional component automatically named after the current file."
+},
 
-  "Smart useState Hook (auto name + conditional import)": {
+  "Smart useState Hook (auto name)": {
     "prefix": "_stfilename",
     "body": [
-      "${TM_CURRENT_LINE/^$/import { useState } from \"react\";/}",
-      "",
       "const [${TM_FILENAME_BASE/(.*)/${1:/downcase}/}, set${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}] = useState(${1:null});"
     ],
     "description": "Creates a useState hook named after the file and conditionally inserts import if none exists."
   },
 
-  "useState Hook (manual name + auto-cap setter + conditional import)": {
+
+  "useState Hook (manual name + auto-cap setter)": {
     "prefix": "_st",
     "body": [
-      "${TM_CURRENT_LINE/^$/import { useState } from \"react\";/}",
-      "",
       "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:null});"
     ],
     "description": "Creates a useState hook with manual variable name, auto-capitalized setter, and conditional import if missing."
