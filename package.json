@@ -2,7 +2,7 @@
   "name": "react-snippets-by-uzisharma",
   "displayName": "React Form UI Snippets",
   "description": "Snippets for React form components and helpers: Button, Input, CheckBox, Form (2 variants), validateField, onChange, validateForm, and form handler.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "uzisharma",
   "engines": {
     "vscode": "^1.85.0"
