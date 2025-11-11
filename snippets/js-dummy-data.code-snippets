@@ -1,0 +1,34 @@
+{
+  "Form Input Fields Array": {
+    "prefix": "inputfields",
+    "body": [
+      "const inputFields = [",
+      "  {",
+      "    name: \"${1:fullName}\",",
+      "    label: \"${1:Full Name}\",",
+      "    type: \"${2:text}\",",
+      "    placeholder: \"${3:Enter your full name}\",",
+      "  },",
+      "  {",
+      "    name: \"${4:email}\",",
+      "    label: \"${4:Email}\",",
+      "    type: \"${5:email}\",",
+      "    placeholder: \"${6:example@gmail.com}\",",
+      "  },",
+      "  {",
+      "    name: \"${7:password}\",",
+      "    label: \"${7:Password}\",",
+      "    type: \"${8:password}\",",
+      "    placeholder: \"${9:Enter your password}\",",
+      "  },",
+      "  {",
+      "    name: \"${10:confirmPassword}\",",
+      "    label: \"${10:Confirm Password}\",",
+      "    type: \"${11:password}\",",
+      "    placeholder: \"${12:Confirm your password}\",",
+      "  },",
+      "];"
+    ],
+    "description": "Creates a reusable inputFields array for form components."
+  }
+}

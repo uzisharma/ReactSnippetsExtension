@@ -1,4 +1,5 @@
 {
+
   "React Button Component": {
     "prefix": "buttoncomponent",
     "body": [
@@ -39,7 +40,7 @@
       "            label={field?.label}",
       "            name={field?.name}",
       "            type={field?.type}",
-      "            value={formData[field?.name]}",
+      "            value={formData?.[field?.name] || \"\"}",
       "            placeholder={field?.placeholder}",
       "            onChange={onChange}",
       "            error={errors[field?.name]}",
@@ -68,6 +69,41 @@
     ],
     "description": "React form component with routing links, dynamic inputs, error handling, and heading-based logic."
   },
+
+
+    "React Table Component": {
+    "prefix": "tablecomponent",
+    "body": [
+      "export default function Table({ data }) {",
+      "  const header = Object.keys(data[0]);",
+      "",
+      "  return (",
+      "    <div className=\"table-container\">",
+      "      <table>",
+      "        <thead>",
+      "          <tr>",
+      "            {header.map((head) => (",
+      "              <th key={head}>{head}</th>",
+      "            ))}",
+      "          </tr>",
+      "        </thead>",
+      "        <tbody>",
+      "          {data.map((row, index) => (",
+      "            <tr key={index}>",
+      "              {header.map((ele, index) => (",
+      "                <td key={index}>{row[ele]}</td>",
+      "              ))}",
+      "            </tr>",
+      "          ))}",
+      "        </tbody>",
+      "      </table>",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "Reusable React Table component that dynamically renders headers and rows from data."
+  },
+
   "React Input Component": {
     "prefix": "inputcomponent",
     "body": [
@@ -151,7 +187,7 @@
     "prefix": "onchangehandler",
     "body": [
       "const onChange = (name, value) => {",
-      "  setLoginData((prev) => ({ ...prev, [name]: value }));",
+      "  set${1:LoginData}((prev) => ({ ...prev, [name]: value }));",
       "",
       "  const fieldError = validateField(name, value);",
       "  setErrors((prev) => ({ ...prev, [name]: fieldError }));",
@@ -186,8 +222,8 @@
       "",
       "  setErrors({});",
       "",
-      "  const user = storedUserDetails.find(",
-      "    (u) => u.email === loginData.email && u.password === loginData.password",
+      "  const user = ${2:storedUserDetails}.find(",
+      "    (u) => u.email === ${3:loginData}.email && u.password === ${3:loginData}.password",
       "  );",
       "};"
     ],

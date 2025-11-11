@@ -28,6 +28,34 @@
       {
         "language": "typescript",
         "path": "./snippets/react-components.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/complete-react-page.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/complete-react-page.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/css-snippets.code-snippets"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/css-snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/js-dummy-data.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react-base.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react-base.code-snippets"
       }
     ]
   },
